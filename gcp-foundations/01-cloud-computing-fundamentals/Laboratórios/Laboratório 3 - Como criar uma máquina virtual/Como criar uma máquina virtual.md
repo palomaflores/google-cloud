@@ -81,15 +81,15 @@ export ZONE=ZONE
 ```
 - Obs: No Cloud Shell, **essas variáveis precisam ser redefinidas** a cada nova sessão
 
+![[Pasted image 20250426140524.png]]
 # 1. Criar uma instância no Console do Cloud
 Nesta etapa do laboratório será criada uma **instância de VM predefinida** usando o **Compute Engine** no Console do Google Cloud
 
 ### Acesso ao Compute Engine
-1. Em **Console do Google Cloud** > **Menu de navegação** (☰)
-2. Vá em **Compute Engine** > **Instâncias de VM**
+1. Em **Console do Google Cloud** > **Menu de navegação** (☰) >  **Compute Engine** > **Instâncias de VM**
 
 ### Criando a Instância de VM
-1. Clicar em  **“CRIAR INSTÂNCIA”** > Preencha os campos com os dados > Clicar em **"Criar"**
+1. Clicar em  **“CRIAR INSTÂNCIA”** > Preencha os campos com os dados >  **"Criar"**
 
 | **Campo**                  | **Valor**                                                        | **Detalhes**                                                                     |
 | -------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -97,13 +97,16 @@ Nesta etapa do laboratório será criada uma **instância de VM predefinida** us
 | **Região**                 | `<REGION>`                                                       | Ex: `us-central1`, `europe-west1` — verifique a região definida anteriormente    |
 | **Zona**                   | `<ZONE>`                                                         | Ex: `us-central1-a` — lembre da zona definida no início                          |
 | **Série**                  | `E2`                                                             | Escolha a série de máquinas **E2**                                               |
-| **Tipo de máquina**        | `e2-medium (2 vCPUs, 4 GB de memória)`                           | Instância com 2 núcleos de CPU e 4 GB de RAM                                     |
+| **Tipo de máquina**        | 2 vCPUs                                                          | Instância com 2 núcleos de CPU e 4 GB de RAM                                     |
 | **Disco de inicialização** | Disco permanente de 10 GB com **Debian GNU/Linux 11 (bullseye)** | Use a imagem Debian padrão                                                       |
 | **Firewall**               | Marque **Permitir tráfego HTTP**                                 | Necessário para permitir o acesso à aplicação web que será instalada futuramente |
 
 - Obs: A VM **gcelab** leva cerca de **1 minuto** para ser criada. Após criada, ela vai aparecer  na lista de instâncias de VM
 - Se quiser usar **SSH** para conectar à VM, clique em **SSH** à direita do nome da instância `gcelab`. Isso vai abrir o terminal SSH direto no navegador
 - [Documentação Oficial](https://cloud.google.com/compute/docs/connect/standard-ssh?hl=pt-br)
+
+![[Pasted image 20250426143435.png]]
+![[Pasted image 20250426143450.png]]
 
 # 2. Instalar um Servidor da Web NGINX
 Nesta etapa do laboratório será instalado e verificado o funcionamento do servidor web **NGINX** na instância de VM criada anteriormente
@@ -155,6 +158,9 @@ http://EXTERNAL_IP/
 ```
 
 - Resultado esperado: A página padrão do NGINX será exibida com a mensagem **"Welcome to nginx!"**
+
+![[Pasted image 20250426145350.png]]
+![[Pasted image 20250426145418.png]]
 
 # 3. Criar uma Nova Instância com a gcloud
 Esta etapa vai usar o **CLI gcloud**, disponível no **Cloud Shell**, para criar uma nova instância de VM chamada `gcelab2` diretamente via terminal, sem usar a interface gráfica
@@ -223,8 +229,11 @@ gcloud compute ssh gcelab2 --zone=$ZONE
 exit
 ```
 
+![[Pasted image 20250426145649.png]]
+![[Pasted image 20250426145814.png]]
+![[Pasted image 20250426145926.png]]
 
-
+#### Pergunta
 Por quais das opções a seguir você pode criar uma instância de VM no Compute Engine?
 - [x] A ferramenta de linha de comando gcloud
 - [x] O Console do Cloud
