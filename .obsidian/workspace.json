@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual/Como criar uma máquina virtual.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cloud Computing Fundamentals"
+              "title": "Como criar uma máquina virtual"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual/Como criar uma máquina virtual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Cloud Computing Fundamentals"
+              "title": "Links inversos para Como criar uma máquina virtual"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual/Como criar uma máquina virtual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Cloud Computing Fundamentals"
+              "title": "Links de saída para Como criar uma máquina virtual"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual/Como criar uma máquina virtual.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Cloud Computing Fundamentals"
+              "title": "Sumário de Como criar uma máquina virtual"
             }
           }
         ]
@@ -170,10 +170,12 @@
   },
   "active": "25ac7751e5ca9d70",
   "lastOpenFiles": [
-    "README.md",
-    "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
     "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual/Como criar uma máquina virtual.md",
     "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 1 - Introdução ao Console do Google Cloud/Introdução ao Console do Google Cloud.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 3 - Como criar uma máquina virtual",
+    "README.md",
     "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170047.png",
     "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170027.png",
     "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170006.png",
