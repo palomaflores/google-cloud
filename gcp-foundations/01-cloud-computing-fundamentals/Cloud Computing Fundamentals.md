@@ -341,3 +341,122 @@ Com ele, é possível>
 [cloud.google.com/console-app](https://cloud.google.com/console-app)
 
   ---
+
+# 3. Criar apps com o google cloud
+- Objetivo: Aprender a criar aplicativos diretamente no Google Cloud
+- Conteúdo: Opções de computação em nuvem, máquina virtual, escalonamento automático, PaaS com Kubernetes (GKE) e Cloud Run para aplicativos escalonáveis
+- Inclui _5 laboratórios_
+
+### Opções de computação na nuvem
+O Google Cloud oferece várias opções de computação para diferentes necessidades
+- **Compute Engine** - é ideal para cargas de trabalho gerais com recursos dedicados
+- **App Engine** - fornece uma solução de plataforma como serviço (PaaS)
+- **Cloud Functions** - permite executar código baseado em eventos sem servidor
+- **Google Kubernetes Engine (GKE)** - roda contêineres com Kubernetes
+- **Cloud Run** - permite implantar aplicativos conteinerizados de forma escalável e sem gerenciar servidores
+
+### Como usar o IaaS com o Compute Engine
+- O Compute Engine é a solução de infraestrutura como serviço (IaaS) do Google Cloud, permitindo a criação e execução de máquinas virtuais (VMs) nos data centers globais da empresa, sem necessidade de investimento inicial. As VMs podem ser totalmente configuradas (CPU, memória, armazenamento e sistemas operacionais) e usadas para vários tipos de cargas de trabalho, como hospedagem de servidores web e backends de aplicativos
+- As VMs podem ser criadas via Google Cloud Console ou linha de comando (gcloud), com suporte a imagens Linux, Windows e sistemas personalizados. A cobrança é feita por segundo, com descontos automáticos por uso prolongado ou compromisso de uso (até 57%) sobre o preço normal
+- Além disso, o Compute Engine oferece VMs preemptivas, ideias para tarefas temporárias como jobs em lote, com economia de até 90%, embora possam ser interrompidas a qualquer momento. A calculadora de preços online pode ser usada para estimular custos e simular diferentes configurações
+- A VM preemptiva só tem uma diferença em relação a uma VM normal do Compute Engine:
+	- O Compute Engine tem permissão para encerrar um job se precisar dos recursos em outro lugar
+	- Nas VMs preemptivas é preciso garantir que o job possa ser interrompido e reiniciado
+
+### Configuração de aplicativos elásticos com escalonamento automático
+ O **Compute Engine** permite criar aplicativos elásticos com **escalonamento automático**, ajustando dinamicamente a quantidade de **VMs** com base em métricas de carga. Os usuários podem escolher entre **tipos de máquinas predefinidos ou personalizados**, com diferentes combinações de CPU e memória.
+
+Além do escalonamento, o serviço oferece **balanceamento de carga** integrado via **VPC**, distribuindo o tráfego entre as VMs. Embora seja possível configurar **VMs grandes** para cargas intensas, como bancos de dados em memória ou análises pesadas, a prática comum é usar o **escalonamento horizontal** (aumentar o número de VMs).
+
+O número de CPUs por VM depende da **família de máquinas** e da **cota disponível na zona**
+
+- [cloud.google.com/compute/docs/machine-types](https://cloud.google.com/compute/docs/machine-types)
+  
+### Como usar o PaaS com o App Engine
+O App Engine é uma plataforma gerenciada pela Google Cloud que permite desenvolver e executar aplicativos escaláveis sem a necessidade de gerenciar servidores ou infraestrutura. Ela é ideal para desenvolvedores que desejam focar apenas no código, com alta disponibilidade e escalonamento automático
+##### Recursos
+- Suporte a linguagens a populares (Java, Python, Go, PHP, Node.js, Ruby)
+- Ferramentas integradas (Eclips, IntelliJ, Maven, Git, Jenkins, etc)
+- Serviços integrados (NoSQL, Memcache, balanceamento de carga, verificações de integridade, logs e autenticação)
+- SDK local para desenvolvimento, testes e implantação
+
+#### Ambientes disponíveis
+1. Padrão
+	- Rápido
+	- Executa apps em contêineres e com restrição à sandbox
+	- Suporte limitado a infraestrutura (sem SSH ou disco local)
+	- Cobrança por uso com desligamento automático
+	- Ideal para apps que rodam bem com configurações pré-definidas
+
+2. Flexível
+	- Lento, mas com acesso a VMs via SSH, uso de Dockerfiles personalizados e instalação de software
+	- Suporte a microsserviços, SQL,NoSQL, divisão de tráfego e etc
+	- Cobrança por alocação de recursos por hora, sem desligamento automático
+	- VMs gerenciadas e atualizadas automaticamente pelo Google
+
+#### Comparação com GKE
+- O App Engine padrão é idal p ara quem quer zero gestão da infraestrutura
+- O GKE (Google Kubernetes Engine) oferece controle total sobre os contêineres
+- O App Engine flexível possui mais flexibilidade que o padrão, mas menos complexidade que o GKE
+
+### Programas voltados para eventos com o Cloud Functions
+O Cloud Functions é um serviço severliess e orientado a eventos do Google Cloud, ideal para executar funções de objetivo único em esposta a eventos específicos, como upload de arquivos, mensagens do pub/sub ou chamadas HTTP
+##### Principais características
+- Executa funções pequenas e independentes sem necessidade de gerenciar servidores
+- Responde a eventos assíncronos do Cloud Storage, Pub/Sub e requisições HTTP síncronas
+- Ideal para processamento de imagens, lógica ne negócios leve, automações e integração entre serviços
+- Cobrança por tempo de execução, em incrementos de 100 ms
+- Suporte para JavaScript, Node.js, Python e Go
+- Execução em ambiente gerenciado do Google Cloud
+
+### Conteinerizar e orquestrar aplicativos com o GKE
+Essa seção aborda o uso de **contêineres** e do **Google Kubernetes Engine (GKE)** para criar, implantar e escalar aplicativos de forma eficiente e flexível
+
+##### **Principais pontos:**
+- **Contêineres** são unidades leves que empacotam código e dependências, isolando o app do SO e do hardware. Eles iniciam rapidamente e escalam como processos, mantendo alta portabilidade    
+- Comparados a **VMs**, contêineres são menores, mais rápidos e mais econômicos    
+- O **Kubernetes** é uma plataforma de código aberto que orquestra e gerencia clusters de contêineres, lidando com escalonamento, balanceamento de carga, atualizações e integridade do sistema    
+- O **GKE** é a versão gerenciada do Kubernetes no Google Cloud, permitindo usar contêineres com produtividade, flexibilidade e eficiência aprimorada    
+- Ele combina os benefícios da **IaaS** (infraestrutura configurável) com a **PaaS** (escalabilidade automática), ideal para arquiteturas de **microsserviços**   
+- O Google executa todos os seus serviços em contêineres, incluindo Gmail e Search, e lança mais de **2 bilhões de contêineres por semana**
+- Ferramentas como **Docker** facilitam o empacotamento e o envio de apps em contêineres para qualquer ambiente compatível    
+
+Contêineres + Kubernetes (via GKE) = escalabilidade, portabilidade e gerenciamento eficiente de aplicações modernas em nuvem
+
+### Computação gerenciada sem servidor com o Cloud Run
+
+### Teste
+1. Qual serviço de computação seria considerado IaaS?
+- [ ] App Engine
+- [x] Compute Engine
+- [ ] Google Kubernetes Engine
+- [ ] Cloud Functions
+
+2. Qual opção a seguir é um ambiente leve de execução sem servidor e totalmente gerenciado para desenvolver e conectar serviços na nuvem?
+- [x] Cloud Functions
+- [ ] App Engine
+- [ ] Google Kubernetes Engine
+- [ ] Compute Engine
+
+3. Qual opção a seguir é um ambiente gerenciado para implantar apps conteinerizados?
+- [ ] Cloud Functions
+- [x] Google Kubernetes Engine
+- [ ] Cloud Run
+- [ ] App Engine
+
+4. Qual é o recurso do Compute Engine que permite adicionar ou subtrair VMs de um aplicativo com base em métricas de carga?
+- [ ] Balanceamento de carga
+- [x] Discos permanentes
+- [ ] Network Time Protocol (NTP)
+- [ ] Escalonamento automático
+
+5. Qual opção a seguir é uma plataforma gerenciada de computação que permite executar contêineres sem estado usando solicitações da Web ou eventos do Pub/Sub?
+- [ ] Google Kubernetes Engine
+- [x] Cloud Run
+- [ ] Cloud Functions
+- [ ] App Engine
+
+6. Qual ambiente do App Engine é baseado em instâncias pré-configuradas de contêineres?
+- [ ] Os ambientes padrão e flexível
+- [ ] Ambiente flexível
+- [x] Ambiente padrão
