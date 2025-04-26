@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Para começar com o Cloud Shell e a gcloud"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para README"
+              "title": "Links inversos para Para começar com o Cloud Shell e a gcloud"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para README"
+              "title": "Links de saída para Para começar com o Cloud Shell e a gcloud"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de README"
+              "title": "Sumário de Para começar com o Cloud Shell e a gcloud"
             }
           }
         ]
@@ -170,6 +170,25 @@
   },
   "active": "25ac7751e5ca9d70",
   "lastOpenFiles": [
-    "README.md"
+    "gcp-foundations/01-cloud-computing-fundamentals/Cloud Computing Fundamentals.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Para começar com o Cloud Shell e a gcloud.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 1 - Introdução ao Console do Google Cloud/Introdução ao Console do Google Cloud.md",
+    "README.md",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170047.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170027.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170006.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424165956.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424165948.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424165925.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170054.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170043.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170018.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens/Pasted image 20250424170012.png",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud/Imagens",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 2 -Para começar com o Cloud Shell e a gcloud",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios/Laboratório 1 - Introdução ao Console do Google Cloud",
+    "gcp-foundations/01-cloud-computing-fundamentals/Laboratórios",
+    "gcp-foundations/01-cloud-computing-fundamentals",
+    "gcp-foundations"
   ]
 }
